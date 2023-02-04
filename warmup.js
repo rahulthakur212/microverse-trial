@@ -12,3 +12,24 @@ let count=0;
     }
     return count;
 }
+
+
+//Jumping on the Clouds
+
+function jumpingOnClouds(c) {
+    // Write your code here
+    let countJump = -1;
+    for(let i = 0; i < c.length;){
+        if(c[i + 2] == 0 && c[i+2] <= c.length){
+            i = i + 2;
+            countJump++;
+        }
+        else{
+            i++;
+            countJump++;
+        }
+    }
+    
+    return countJump;
+}
+
